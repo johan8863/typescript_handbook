@@ -6,4 +6,15 @@ const hello = "Hello World!";
 
 // This expression is not callable.
 // Type 'String' has no call signatures.
-console.log(hello());
+// console.log(hello());
+
+
+// the same applies for unexisting objects attributes or methods
+const user = {
+  name: 'Gisela',
+  gender: 'f'
+}
+
+// Property 'age' does not exist on type '{ name: string; gender: string; }'.
+// age... mom, no pun intended
+console.log(user.age);
