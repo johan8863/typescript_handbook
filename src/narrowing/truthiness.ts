@@ -8,3 +8,13 @@ const getUsersOnline = (numUsersOnline: number) => {
   }
   return "Nobody's online :(";
 };
+
+const printAll = (strs: string | string[] | null) => {
+  if (strs && typeof strs === "object") {
+    for (const str of strs) {
+      console.log(str);
+    }
+  } else if (typeof strs === "string") {
+    console.log(strs);
+  }
+};
