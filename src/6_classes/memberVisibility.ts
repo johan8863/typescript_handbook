@@ -33,3 +33,17 @@ class SpecialGreeter extends Greeter {
 const sg = new SpecialGreeter();
 sg.howdy();
 sg.getName(); // error
+
+// private
+class Base {
+  private x = 0;
+}
+
+const b = new Base();
+b.x;
+
+class DerivedBase {
+  showX(): void {
+    console.log(this.x);
+  }
+}
